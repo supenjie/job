@@ -8,7 +8,7 @@
         <span>头像</span>
         <el-upload
           class="avatar-uploader"
-          action="https://47.94.4.201/index.php/index/upload/uploadimg"
+          action="https://www.zzgoodqc.cn/index.php/index/upload/uploadimg"
           :show-file-list="false"
           :on-success="handleAvatarSuccess"
         >
@@ -145,7 +145,7 @@ export default {
   methods: {
     // 提交
     onSubmit() {
-      const apiUrl = "http://47.94.4.201/index.php/index/index/mycenter";
+      const apiUrl = "https://www.zzgoodqc.cn/index.php/index/index/mycenter";
       const params = {
         name: this.form.name,
         nick: this.form.nickname,

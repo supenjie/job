@@ -177,7 +177,7 @@ export default {
       reader.readAsDataURL(file.raw);
     },
     uploadImage(base64Data) {
-      const apiUrl = "http://47.94.4.201/index.php/index/upload/uploadimg";
+      const apiUrl = "https://www.zzgoodqc.cn/index.php/index/upload/uploadimg";
       const params = {
         imgurl: base64Data,
       };
@@ -186,9 +186,9 @@ export default {
         .then((response) => {
           const imageUrl = response.data.data.url;
           this.imageUrl = imageUrl;
-          console.log(response, "http://47.94.4.201/" + imageUrl);
+          console.log(response, "https://www.zzgoodqc.cn" + imageUrl);
           // 将imageUrl赋值给data的某个属性
-          this.imageUrl = "http://47.94.4.201/" + imageUrl;
+          this.imageUrl = "https://www.zzgoodqc.cn" + imageUrl;
         })
         .catch((error) => {
           console.error(error);

@@ -8,7 +8,7 @@
         <span>头像</span>
         <el-upload
           class="avatar-uploader"
-          action="http://47.94.4.201/index.php/index/upload/uploadimg"
+          action="https://47.94.4.201/index.php/index/upload/uploadimg"
           :show-file-list="false"
           :on-success="handleAvatarSuccess"
         >
